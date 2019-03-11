@@ -1,1 +1,1 @@
-json.array! @favorites, :id, :image_url, :name, :user_id
+json.array! @favorites, :id, :image_url, :name, :user_id, :position

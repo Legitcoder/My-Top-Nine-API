@@ -1,1 +1,1 @@
-json.(@favorite, :id, :image_url, :user_id, :name)
+json.(@favorite, :id, :image_url, :user_id, :name, :position)
