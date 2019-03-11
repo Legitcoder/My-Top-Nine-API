@@ -1,5 +1,10 @@
 # My Top Nine API
 
+https://my-top-nine.herokuapp.com/api
+
+GET Categories Example:
+
+https://my-top-nine.herokuapp.com/api/categories
 
 #### Sign Up
 
@@ -11,6 +16,8 @@ Request Body:
 ```
 { username: String, password: String }
 ```
+
+Note: Sign Up doesn't return JSON Web Token. Must Login after Signing Up to receive JWT. 
 
 #### Log In
 
@@ -34,6 +41,9 @@ Request Body:
 ```
 N/A
 ```
+
+Note: This endpoint should be used after logging in and decoding the JWT
+token in the front end to get the userId to retrieve all user attributes.
 
 #### Get Categories
 
