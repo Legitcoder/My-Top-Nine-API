@@ -30,6 +30,11 @@ Request Body:
 { username: String, password: String }
 ```
 
+Test User is already saved in the database to use. 
+
+username: "test"
+password: "123456"
+
 
 #### Get User
 
