@@ -32,7 +32,7 @@ GET api/users/:id
 Request Body:
 
 ```
-{ id: Integer }
+N/A
 ```
 
 #### Get Categories
