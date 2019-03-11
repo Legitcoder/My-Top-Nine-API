@@ -1,24 +1,85 @@
-# README
+# My Top Nine API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+#### Sign Up
 
-* Ruby version
+```
+POST api/users
+```
+Request Body:
 
-* System dependencies
+```
+{ username: String, password: String }
+```
 
-* Configuration
+#### Log In
 
-* Database creation
+```
+POST api/tokens
+```
+Request Body:
 
-* Database initialization
+```
+{ username: String, password: String }
+```
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+#### Get User
 
-* Deployment instructions
+```
+GET api/users/:id
+```
+Request Body:
 
-* ...
+```
+{ id: Integer }
+```
+
+#### Get Categories
+
+```
+GET api/categories
+```
+
+Request Body:
+
+```
+N/A
+```
+
+#### Get Items in Category
+
+```
+GET api/categories/:categoryId/items
+```
+
+Request Body:
+
+```
+N/A
+```
+
+#### Create a Top Favorite
+
+```
+POST api/users/:userId/favorites
+```
+
+Request Body:
+
+```
+{ name: String, imageUrl: String, position: Integer }
+```
+#### Delete a Top Favorite
+
+```
+DELETE api/users/:userId/favorites/:id
+```
+
+Request Body:
+
+```
+N/A
+```
+
+
