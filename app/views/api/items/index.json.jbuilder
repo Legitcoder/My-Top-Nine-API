@@ -1,0 +1,1 @@
+json.array! @items, :id, :image_url, :name, :category_id

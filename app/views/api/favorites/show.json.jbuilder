@@ -1,0 +1,1 @@
+json.(@favorite, :id, :image_url, :user_id, :name)
