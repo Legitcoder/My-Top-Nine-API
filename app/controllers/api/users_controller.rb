@@ -4,7 +4,9 @@ class Api::UsersController < ApplicationController
   def create
     @user = User.new(user_params)
     if @user.save
-      render :ok, json: {}
+      render :ok, json: {
+          jwt: AuthenticationHelper.issue_token({id: @user.id})
+      }
     else
       @errors = @user.errors.full_messages
       render json: { message: @errors }, status: :unauthorized
