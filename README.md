@@ -106,6 +106,12 @@ Return Example:
 GET api/categories/:categoryId/items
 ```
 
+Request Body:
+
+```
+N/A
+```
+
 Return Example:
 
 ```
@@ -126,10 +132,61 @@ Return Example:
 ```
 
 
+#### Create an Item in a Category
+
+```
+POST api/categories/:categoryId/items
+```
+
+Request Body:
+
+```
+{ name: String, imageUrl: String }
+```
+
+Return Example:
+
+```
+{
+    "id": 8,
+    "imageUrl": "https://robohash.org/iustopossimusmodi.png?size=300x300&set=set1",
+    "categoryId": 1,
+    "name": "Shooked Ones"
+}
+```
+
+
+#### Get User Favorites
+
+```
+GET api/users/:userId/favorites
+```
+
 Request Body:
 
 ```
 N/A
+```
+
+Return Example:
+
+```
+[
+    {
+        "id": 1,
+        "imageUrl": "https://robohash.org/eumenimquo.png?size=300x300&set=set1",
+        "name": "Gears of War",
+        "userId": 1,
+        "position": 1
+    },
+    {
+        "id": 2,
+        "imageUrl": "https://robohash.org/voluptatesnecessitatibusdeleniti.png?size=300x300&set=set1",
+        "name": "Lose Yourself",
+        "userId": 1,
+        "position": 2
+    }
+]
 ```
 
 #### Create a Top Favorite

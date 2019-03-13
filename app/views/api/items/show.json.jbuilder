@@ -1,0 +1,1 @@
+json.(@item, :id, :image_url, :category_id, :name)
